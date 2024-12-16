@@ -7,13 +7,13 @@ import io.cucumber.testng.CucumberOptions;
         features = "src\\test\\resources\\Features\\validLogin.feature", // Remove "./" for clarity
         glue = {"stepDefinitions","appHooks"},
 //        tags = "@RegressionTest or @SmokeTest", // Space before "@" is unnecessary
-//        plugin = {
-//                "pretty", 
+        plugin = {
+                "pretty", 
 ////                "html:target/cucumber-reports/Cucumber.html", 
-////                "json:target/cucumber-reports/Cucumber.json", 
+                "json:target/cucumber-reports/Cucumber.json", 
 ////                "junit:target/cucumber-reports/Cucumber.xml", 
 ////                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
-//        },
+        },
         dryRun = false,
         monochrome = true // Set true for better console output readability
 )
