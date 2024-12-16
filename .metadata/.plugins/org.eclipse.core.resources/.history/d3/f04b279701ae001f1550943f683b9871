@@ -1,0 +1,32 @@
+package stepDefinitions;
+
+public class ScenarioOutline {
+
+	
+	
+	@Given("the user is on the login page")
+	public void the_user_is_on_the_login_page() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("the user enters {string} and {string}")
+	public void the_user_enters_and(String string, String string2) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("clicks the Login button in the login page")
+	public void clicks_the_login_button_in_the_login_page() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("the user should see successful login")
+	public void the_user_should_see_successful_login() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	
+}

@@ -1,0 +1,18 @@
+ Feature: Login Functionality
+
+  As a user
+  I want to log into the application
+  So that I can access my account and personalized features
+
+  Scenario Outline: Login with valid and invalid credentials
+    Given the user is on the login page
+    When the user enters "<username>" and "<password>"
+    And clicks the "Login" button
+    Then the user should see "<message>"
+
+    Examples:
+      | username      | password    | message                                   |
+      | validUser     | validPass   | "Welcome to your dashboard!"             |
+      | invalidUser   | validPass   | "Invalid username or password."          |
+      | validUser     | invalidPass | "Invalid username or password."          |
+      |               |             | "Username and password cannot be empty." |

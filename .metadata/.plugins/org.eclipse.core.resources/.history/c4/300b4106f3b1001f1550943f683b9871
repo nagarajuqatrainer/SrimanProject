@@ -1,0 +1,16 @@
+package appBase;
+
+import Config.BrowserDriver;
+import io.cucumber.java.Before;
+
+public class Hooks {
+	
+	
+	
+	@Before
+	public void startBrowser() {
+		BrowserDriver.getCurrentDriver("chrome").get("https://www.mycontactform.com");
+		
+	}
+
+}
